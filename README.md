@@ -2,7 +2,7 @@
 
 This Laravel bundle provides a very simple way to capture website screenshots. It uses the headless webkit 'PhantomJS' as a capture-engine. 
 
-Credits to the PhantomJS team for creating the awsome headless webkit. For more info about PhantomJS, check out: [http://phantomjs.org](http://phantomjs.org)
+Credits to the PhantomJS team for creating the awesome headless webkit. For more info about PhantomJS, check out: [http://phantomjs.org](http://phantomjs.org)
 
 ## Install ##
 
@@ -13,6 +13,8 @@ In ``application/bundles.php`` add:
 ```
 
 The application uses the phantomjs file in the bundle's library folder. This is the OSX version of PhantomJS. If your machine needs an other file. Get the proper PhantomJS from the [website](http://phantomjs.org/download.html) and edit the sample config file in ``bundels/webcap/config/webcap.php`` and input the path to PhantomJS.
+
+Please note that you might not be able to exec() a phantom file outside the bundle's library folder, due to safe mode restrictions. This can be solved by making a symbolic link to the actual phantomjs file.
 
 ## Usage ##
 
