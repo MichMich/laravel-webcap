@@ -16,7 +16,7 @@ The application uses the phantomjs file in the bundle's library folder. This is 
 
 ## Usage ##
 
-The bundle has a some basic functionalities. Take a look at the webcap.php in the library file for detailed information.
+The bundle has a some basic functionalities. Take a look at the webcap.php in the library folder for detailed information.
 
 ## Example ##
 
