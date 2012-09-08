@@ -6,10 +6,11 @@
  * Credits to the PhantomJS team for creating the awsome headless webkit.
  * For more info about PhantomJS, check out: http://phantomjs.org
  *
- * @package Webcap
- * @version 1.0
- * @author Michael Teeuw
- * @link https://github.com/MichMich/laravel-webcap
+ * @package 	Webcap
+ * @version 	1.0
+ * @author 		Michael Teeuw
+ * @link 		https://github.com/MichMich/laravel-webcap
+ * @license   	MIT License
  * @example
  *
  *		$capture = Webcap::open('http://www.xonaymedia.nl')
@@ -192,7 +193,7 @@ class Webcap {
 	 */
 	private function makeCommand() {
 
-		$phantom_path = Config::get("webcap.phantom_path", __DIR__  . DS . 'phantomjs');
+		$phantom_path = Config::get("webcap::webcap.phantom_path", __DIR__  . DS . 'phantomjs');
 
 		$cmd = '';
 		$cmd .= $phantom_path . ' ';
