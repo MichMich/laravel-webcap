@@ -2,7 +2,7 @@
 
 This Laravel bundle provides a very simple way to capture website screenshots. It uses the headless webkit 'PhantomJS' as a capture-engine. 
 
-Credits to the PhantomJS team for creating the awsome headless webkit. For more info about PhantomJS, check out: [http://phantomjs.org]()
+Credits to the PhantomJS team for creating the awsome headless webkit. For more info about PhantomJS, check out: [http://phantomjs.org](http://phantomjs.org)
 
 ## Install ##
 
@@ -26,7 +26,7 @@ $capture = Webcap::open('http://www.xonaymedia.nl')
 			->size(1200,675)
 			->capture();
 				
-if ($capture && !$capture->error()) {
+if ($capture->file()) {
 	return Response::download($capture->file());
 } else {
 	return $capture->error();
