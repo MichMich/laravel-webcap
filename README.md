@@ -14,6 +14,8 @@ In ``application/bundles.php`` add:
 
 The application uses the phantomjs file in the bundle's library folder. This is the OSX version of PhantomJS. If your machine needs an other file. Get the proper PhantomJS from the [website](http://phantomjs.org/download.html) and edit the sample config file in ``bundels/webcap/config/webcap.php`` and input the path to PhantomJS.
 
+**Please note: the phantomjs file in the bundle's library folder should be executable. This can be done by setting the following permissions via the terminal: ``chmod 777 phantomjs``**
+
 Please note that you might not be able to exec() a phantom file outside the bundle's library folder, due to safe mode restrictions. This can be solved by making a symbolic link to the actual phantomjs file.
 
 ## Usage ##
