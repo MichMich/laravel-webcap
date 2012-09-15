@@ -139,7 +139,7 @@ class Webcap {
 	 */
 	public function capture() {
 		if ($this->url) {
-			$this->filename = sys_get_temp_dir() . md5($this->url . microtime()).'.'.$this->filetype;
+			$this->filename = sys_get_temp_dir() . DS . md5($this->url . microtime()).'.'.$this->filetype;
 			$result = exec($this->makeCommand());
 			if ($result == "") {
 				if (!file_exists($this->filename)) {
